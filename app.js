@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require("puppeteer")
 const firebase = require('firebase')
 
 //8E+ajqBGt?w-y-y
