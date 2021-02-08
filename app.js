@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer-core');
+const puppeteer = require('puppeteer');
 const firebase = require('firebase')
 
 //8E+ajqBGt?w-y-y
@@ -84,3 +84,18 @@ await docRef.set({
   description : DB[0].description
 });
 }
+// const puppeteer = require("puppeteer");
+
+// async function main() {
+//   const browser = await puppeteer.launch({
+//     headless: true,
+//     args: ["--no-sandbox"]
+//   });
+//   const tab = await browser.newPage();
+//   const text = await (await tab.goto("http://example.com/")).text();
+//   console.log(text);
+//   console.log("done");
+//   browser.close();
+// }
+
+// main();
