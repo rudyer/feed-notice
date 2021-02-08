@@ -25,10 +25,11 @@ const DB = [{
 var contador = 0;
 getDados();
 var myVar = setInterval(getDados, 120000);
+//      executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/Chrome',
+
 async function getDados(){
   console.log('Entrei')
   const browser = await puppeteer.launch({
-      //executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/Chrome',
       headless: true,
       args: ['--no-sandbox']
     });
