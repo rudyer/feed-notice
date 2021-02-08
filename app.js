@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer-core');
 const firebase = require('firebase')
 
-
+//8E+ajqBGt?w-y-y
 var firebaseConfig = {
     apiKey: "AIzaSyAAoalT4d0iStydqqAEzXUKEojP8wYQXsw",
     authDomain: "central-sul.firebaseapp.com",
@@ -29,7 +29,8 @@ async function getDados(){
   console.log('Entrei')
   const browser = await puppeteer.launch({
       executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/Chrome',
-      headless: true
+      headless: true,
+      args: ['--no-sandbox']
     });
   const page = await browser.newPage();
   page.setDefaultTimeout(0);
