@@ -22,12 +22,12 @@ var firebaseConfig = {
   var db = firebase.firestore();
 
   export async function Get(props:string){
-    const docRef = db.collection('news').doc(props);
+    const docRef = db.collection('notes').doc(props);
     return (await docRef.get()).data()
   }
 
   export async function Saved(props:News) {
-    const docRef = db.collection('news').doc(props.title);
+    const docRef = db.collection('notes').doc(props.title);
     await docRef.set({
       id: props.id,
       url_news: props.url_news,
